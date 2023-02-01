@@ -15,7 +15,7 @@ async def test2():
 
 @app.post('/test2')
 async def test2():
-    return {"message": "Hello World ,this is post method"}
+    return {"message": "Hello World ,This is post method. It works"}
 
 if __name__ == "__main__":
     uvicorn.run(app="main:app", reload=True, host="localhost", port=8080)
